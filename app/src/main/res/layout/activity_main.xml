@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainBackGround"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:hint="Первое число"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:hint="Второе число"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="28dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="plusButtonClik"
+        android:text="+"
+        android:textSize="30sp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#5E2F2F" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="65sp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="minusButtonClik"
+        android:text="-"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="65sp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="multButtonClik"
+        android:text="*"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="65sp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="divButtonClik"
+        android:text=":"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/button3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="278dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Калькулятор для Даши"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
