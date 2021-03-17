@@ -1,3 +1,3 @@
 # babyCalc
 ## Simple android calculator
-Calculator allows to make ***+*** - : * of 2 numbers
+Calculator allows to make | ***+*** | - | : | * | of 2 numbers
